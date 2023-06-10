@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag-drop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h2>Draggable</h2>
+        <div class="dropzone">
+          <div class="list" id="draggable" draggable="true">item1</div>
+          <div class="list" id="draggable" draggable="true">item2</div>
+          <div class="list" id="draggable" draggable="true">item3</div>
+          <div class="list" id="draggable" draggable="true">item4</div>
+          <div class="list" id="draggable" draggable="true">item5</div>
+        </div>
+      </div>
+      <div class="right">
+        <h2 id="drop-highlight">Droppable</h2>
+        <div class="dropzone" id="droptarget"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="btn" onclick="returnToOriginal()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
